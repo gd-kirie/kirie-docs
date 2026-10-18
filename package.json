@@ -1,0 +1,24 @@
+{
+  "name": "kirie-docs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vitepress build",
+    "dev": "vitepress dev --host 127.0.0.1",
+    "preview": "vitepress preview --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "lint:eslint": "eslint .",
+    "format:eslint": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
+    "eslint-plugin-format": "catalog:",
+    "mermaid": "catalog:",
+    "typescript": "catalog:",
+    "vitepress": "catalog:",
+    "vitepress-plugin-mermaid": "catalog:",
+    "vue": "catalog:"
+  }
+}

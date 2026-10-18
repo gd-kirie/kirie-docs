@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/gd-kirie/gd-kirie",
+  "commit": "9f576e16a7ad776ba839c26b30426105dada875a",
+  "files": [
+    "docs/architecture.md",
+    "docs/assets/kirie-logo-color.svg",
+    "docs/assets/kirie-logo.svg",
+    "packages/GdKirie.EventaAdapter/README.md",
+    "packages/GdKirie.Platform/README.md",
+    "packages/cli/README.md",
+    "packages/ipc-eventa/README.md",
+    "packages/ipc/README.md",
+    "packages/kirie/README.md",
+    "packages/platform/README.md",
+    "packages/vitest/README.md",
+    "README.md"
+  ]
+}

@@ -1,0 +1,39 @@
+[settings]
+lockfile = true
+legacy_version_file = false
+
+[tools]
+node = "24.15.0"
+pnpm = "12.3.4"
+
+[tasks.build]
+description = "Build the documentation site"
+run = "pnpm run build"
+
+[tasks.dev]
+description = "Start the documentation development server"
+run = "pnpm run dev"
+
+[tasks.preview]
+description = "Preview the built documentation site"
+run = "pnpm run preview"
+
+[tasks.typecheck]
+description = "Typecheck the site configuration and theme"
+run = "pnpm run typecheck"
+
+[tasks.lint]
+description = "Run all documentation linters"
+run = "pnpm run lint:eslint"
+
+[tasks."lint:eslint"]
+description = "Lint TypeScript, JSON, CSS, and HTML files"
+run = "pnpm run lint:eslint"
+
+[tasks.format]
+description = "Format the documentation sources"
+run = "pnpm run format:eslint"
+
+[tasks."format:eslint"]
+description = "Format TypeScript, JSON, CSS, and HTML files"
+run = "pnpm run format:eslint"
