@@ -70,28 +70,3 @@ The root project README snapshot adds `./` to its logo path for Vite asset resol
 The site configuration is `.vitepress/config.ts`.
 The theme reuses the existing Kirie assets under `content/docs/assets`.
 Production output belongs in `.vitepress/dist` and is ignored by Git.
-
-## Deployment
-
-The production domain is **https://kirie.lemonneko.moe**.
-The Documentation workflow builds pull requests and deploys `main` to GitHub Pages.
-It builds the site at `/` for the custom domain.
-The sitemap uses the production domain.
-
-Configure the domain in [the documentation repository's Pages settings](https://github.com/gd-kirie/kirie-docs/settings/pages):
-
-1. Select **GitHub Actions** as the publishing source.
-2. Set **Custom domain** to `kirie.lemonneko.moe` and save it.
-3. At the DNS provider for `lemonneko.moe`, add a `CNAME` record named `kirie` with the value `gd-kirie.github.io`.
-4. When GitHub makes the option available, enable **Enforce HTTPS**.
-
-The DNS target excludes the repository name.
-Actions deployments use the domain in Pages settings and do not require a `CNAME` file.
-See [GitHub's custom domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
-
-For another URL path, set `KIRIE_DOCS_BASE` before building and previewing:
-
-```sh
-KIRIE_DOCS_BASE=/kirie-docs/ mise run build
-KIRIE_DOCS_BASE=/kirie-docs/ mise run preview
-```
