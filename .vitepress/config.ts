@@ -18,18 +18,30 @@ const config = withMermaid({
   },
   lastUpdated: true,
   transformPageData: (page) => {
-    if (page.filePath.startsWith("docs/guide/") ||
-      page.filePath.startsWith("docs/api/") ||
-      page.filePath === "docs/index.md") {
+    if (page.filePath.startsWith("docs/guide/")
+      || page.filePath.startsWith("docs/api/")
+      || page.filePath === "docs/index.md") {
       page.frontmatter.editLink = false;
     }
   },
   mermaid: { securityLevel: "strict" },
   head: [
-    ["link", { rel: "icon", type: "image/svg+xml", href: `${base}kirie-logo-color.svg` }],
-    ["meta", { name: "theme-color", content: "#478cbf" }],
-    ["meta", { property: "og:type", content: "website" }],
-    ["meta", { property: "og:site_name", content: "Kirie" }],
+    [
+      "link",
+      { rel: "icon", type: "image/svg+xml", href: `${base}kirie-logo-color.svg` },
+    ],
+    [
+      "meta",
+      { name: "theme-color", content: "#478cbf" },
+    ],
+    [
+      "meta",
+      { property: "og:type", content: "website" },
+    ],
+    [
+      "meta",
+      { property: "og:site_name", content: "Kirie" },
+    ],
   ],
   themeConfig: {
     logo: { src: "/kirie-logo-color.svg", alt: "Kirie" },
@@ -73,12 +85,16 @@ const config = withMermaid({
       },
     ],
     search: { provider: "local" },
-    outline: { level: [2, 3] },
+    outline: {
+      level: [2, 3],
+    },
     editLink: {
       pattern: `${repository}/edit/main/:path`,
       text: "Edit this page on GitHub",
     },
-    socialLinks: [{ icon: "github", link: repository }],
+    socialLinks: [
+      { icon: "github", link: repository },
+    ],
     footer: {
       message: "Kirie · Web UI for Godot games.",
     },
@@ -92,6 +108,8 @@ export default defineConfig({
     publicDir: fileURLToPath(new URL("../content/docs/assets", import.meta.url)),
     // The plugin's direct dependency entries assume hoisting. Prebundle Mermaid
     // with its own dependency context for pnpm's isolated dependency layout.
-    optimizeDeps: { include: ["mermaid"] },
+    optimizeDeps: {
+      include: ["mermaid"],
+    },
   },
 });

@@ -28,7 +28,7 @@ export default antfu(
       "regexp/prefer-w": "off",
       "regexp/use-ignore-case": "off",
       "style/arrow-parens": ["error", "always"],
-      "style/operator-linebreak": ["error", "after"],
+      "style/operator-linebreak": ["error", "before"],
       "ts/method-signature-style": "off",
     },
   },
