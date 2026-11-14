@@ -8,7 +8,7 @@ allowBuilds:
 catalog:
   "@antfu/eslint-config": ^10.0.0
   "@types/node": ^26.6.6
-  eslint: ^10.14.0
+  eslint: ^10.15.0
   eslint-plugin-format: ^2.0.1
   mermaid: ^11.17.2
   typescript: ^6.0.3
@@ -27,3 +27,5 @@ minimumReleaseAgeExclude:
   - "@vue/runtime-dom@3.5.45"
   - "@vue/server-renderer@3.5.45"
   - "@vue/shared@3.5.45"
+  - eslint@10.15.0
+  - "@eslint/config-array@0.23.6"
