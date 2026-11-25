@@ -7,7 +7,7 @@ allowBuilds:
 
 catalog:
   "@antfu/eslint-config": ^10.0.0
-  "@types/node": ^26.6.6
+  "@types/node": ^26.6.7
   eslint: ^10.15.0
   eslint-plugin-format: ^2.0.1
   mermaid: ^11.17.2
@@ -29,3 +29,4 @@ minimumReleaseAgeExclude:
   - "@vue/shared@3.5.46"
   - eslint@10.15.0
   - "@eslint/config-array@0.23.6"
+  - "@types/node@26.6.7"
